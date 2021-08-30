@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrap {
+    width: 60vw;
+    margin: auto;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+
+}
+.logo img {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 15vw;
+}
+
+/* STEP NAVIGATION */
+.circle {
+    width: 4.5rem;
+    height: 4.5rem;
+    line-height: 4.2rem;
+    color: #006BCE;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1.5px solid  #006BCE;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.stepWrapper {
+    display: flex;
+    margin-bottom: 20px;
+    text-align: center;
+    /* justify-content: center;  */
+}
+
+.stepBlock .circleWrapper {
+    padding: 0 1rem;
+    position: relative;
+}
+
+.stepBlock:not(:last-child) .circleWrapper::after {
+    content: '';
+    width: 10vw;
+    height: 2px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background-color: #006BCE;
+    margin: auto;
+    z-index: -1;
+}
+
+.stepBlock {
+    width: 20%;
+    padding-left: 2rem;
+}
+
+.step-label {
+    margin-top: 1rem;
+    width: 100%;
+
+}
+
+.step-label1 {
+    font-size: 16px;
+    width: 100%;
+    font-weight: 700;
+}
+
+.step-label2 {
+    font-size: 16px;
+    width: 100%;
+}
+
+.selected .circle{
+    background-color: #c5dcfa;
+}
+
+
+/* FORM */
+.title {
+    background-color: #c5dcfa;
+    text-align: center;
+}
+
+.title p {
+    
+    font-weight: 600;
+    font-size: 21px;
+    color: #000;
+    line-height: 2rem;
+}
+
+.inform {
+    text-align: center;
+    padding: 1rem;
+}
+
+.inform p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+}
+
+.contact-form .form-field {
+    position: relative;
+    margin: 0.5rem 0;
+}
+
+.contact-form .input-text {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    line-height: 1.7rem;
+    border: 1px solid #c7c7c7;
+}
+
+.contact-form .label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #c7c7c7;
+}
+
+.submit-btn {
+    width: auto;
+    background-color: #c5dcfa;
+    color: #0a3977;
+    font-size: 16px;
+    font-weight: 600;
+    float: right;
+}
+
+.submit-btn:hover {
+    background-color: #7aaae8;
+    color: #0a3977;
+}
+
+.upload-btn {
+    background-color: #fff;
+    border: none;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+.img-uploaded img {
+    max-width: 100%;
+    max-height: 7rem;
+}
+
+.upload-sec {
+    margin:  auto !important;
+}
+
+@media only screen and (max-width: 1100px) {
+    .logo img {
+        width: 15vw;
+    }
+    .stepBlock .circleWrapper {
+        padding: 0 1.5rem;
+    }
+
+    .stepBlock {
+        padding-left: 0.2rem;
+    }
+
+    .circle {
+        width: 4.3rem;
+        height: 4.3rem;
+        line-height: 4rem;
+    }
+
+    .step-label {
+       margin-left: 0.3rem;
+    }
+    
+    .step-label1 {
+        font-size: 14px;
+        width: 100%;
+    }
+    
+    .step-label2 {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .stepBlock .circleWrapper {
+        padding: 0 1.5rem;
+    }
+    .stepBlock {
+        padding-left: 0.2rem;
+    }
+    .circle {
+        width: 4rem;
+        height: 4rem;
+        line-height: 3.8rem;
+    }
+    
+    .step-label1 {
+        font-size: 12px;
+        width: 100%;
+    }
+    
+    .step-label2 {
+        font-size: 12px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .logo img {
+        width: 20vw;
+    }
+
+    .wrap {
+        width: 65vw;
+    }
+    .stepBlock .circleWrapper {
+        padding: 0 1.2rem;
+    }
+
+    .circle {
+        width: 3rem;
+        height: 3rem;
+        line-height: 2.8rem;
+        font-size: 1.5rem;
+    }
+    
+    .step-label1 {
+        font-size: 10px;
+    }
+    
+    .step-label2 {
+        font-size: 10px;
+    }
+
+    .inform p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo img {
+        width: 25vw;
+    }
+    .wrap {
+        width: 80vw;
+    }
+    .stepBlock .circleWrapper {
+        padding: 0 0.4rem;
+    }
+
+    .circle {
+        width: 2.8rem;
+        height: 2.8rem;
+        line-height: 2.6rem;
+        font-size: 1.2rem;
+    }
+
+    .step-label {
+        margin-left: -0.2rem;
+     }
+    
+    .step-label1 {
+        font-size: 10px;
+    }
+    
+    .step-label2 {
+        font-size: 8px;
+    }
+
+    .inform {
+        padding-top: 0;
+    }
+
+    .inform p {
+        font-size: 12px;
+    }
+
+    .title p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .logo img {
+        width: 40vw;
+    }
+    .wrap {
+        width: 80vw;
+    }
+
+    .circle {
+        width: 2.4rem;
+        height: 2.4rem;
+        line-height: 2.2rem;
+        font-size: 1rem;
+    }
+
+    .step-label {
+        margin-left: -0.2rem;
+     }
+    
+    .step-label1 {
+        font-size: 8px;
+    }
+    
+    .step-label2 {
+        font-size: 8px;
+    }
+
+    .inform p {
+        font-size: 10px;
+    }
+
+    .title p {
+        font-size: 14px;
+        line-height: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .logo img {
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        width: 40vw;
+    }
+
+    .wrap {
+        width: 98vw;
+    }
+
+    .circle {
+        width: 2.2rem;
+        height: 2.2rem;
+        line-height: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .stepBlock:not(:last-child) .circleWrapper::after {
+        height: 1px;
+        width: 20vw;
+
+    }
+
+    .step-label {
+        margin-top: 0.5rem;
+     }
+    
+    .step-label1 {
+        font-size: 6px;
+    }
+    
+    .step-label2 {
+        font-size: 6px;
+    }
+}

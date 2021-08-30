@@ -1,0 +1,1 @@
+export const hostingUrl = "http://localhost:3000";
